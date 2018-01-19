@@ -1,0 +1,98 @@
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+html {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Century Gothic';
+  font-size: 4em;
+  color: rgb(225, 225, 225);
+  opacity: 0.13;
+  margin-left: 70px;
+  margin-top: 70px;
+  font-weight: 100;
+}
+
+span.label {
+    transform: rotate(-90deg) translateZ(0);
+    margin-top: 150px;
+    margin-left: 50px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    letter-spacing: .35rem;
+    text-transform: uppercase;
+
+  }
+
+  span.menu {
+    margin-top: 10%;
+    margin-left: 50%;
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    letter-spacing: .35rem;
+    text-transform: uppercase;
+  }
+
+  ol, li {
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    letter-spacing: .35rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+    margin-top: 2%;
+  }
+
+p {
+  font-size: 24px;
+  font-family: 'Century Gothic';
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  opacity: 0.7;
+}
+
+div.gallery {
+    margin: 5px;
+    margin: 0 auto;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}

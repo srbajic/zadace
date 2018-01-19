@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- COMMON TAGS -->
+  <title>prijava ispita</title>
+  <link rel="stylesheet" href="stil.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+  <div id="sidebar">
+  <div id="sidebarimage"></div>
+  </div>
+
+  <div class="container">
+    <div class="typewriter">
+    <p id="home">Prijava ispita je dozvoljena do 5 (pet) dana prije datuma ispitnog roka !!! </p>
+  </div>
+  </div>
+
+
+
+
+  <div class="loginbtn">
+    <button>PRIJAVA</button>
+  </div>
+
+<br />
+    <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+  <form action="test.php">
+  <fieldset class="prijava">
+  <legend id="login">PRIJAVA U SUSTAV</legend>
+
+  <label>korisničko ime</label> <br />
+  <input type="text" placeholder="ffos@ffos.hr" name="uname" required>
+  <br />
+  <br />
+  <label>lozinka</label> <br />
+  <input type="text" placeholder="lozinka" name="lozinka" required>
+  </fieldset>
+  </form>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+  <form action="test.php" method="post">
+    <fieldset class="kolegij">
+  <legend><b>PRIJAVA ISPITA</b></legend>
+
+  <hr />
+  <label>Godina studija:</label>
+    <input list="godinaStudija" name="godinaStudija">
+    <datalist id="godinaStudija">
+      <option value="1.">godina</option>
+      <option value="2.">godina</option>
+      <option value="3.">godina</option>
+      <option value="4.">godina</option>
+      <option value="5.">godina</option>
+    </datalist>
+      <hr />
+
+  <label>PREDMET KOJI ŽELIM POLAGATI:</label> <br />
+      <input type="radio">
+      <label >OBLIKOVANJE MREŽNIH STRANICA</label>
+    <br />
+  	<input type="radio">
+  	<label >BAZE PODATAKA I.</label>
+    <br />
+  	<input type="radio">
+  	<label >ORGANIZACIJA I POSLOVANJE INFORMACIJSKIH USTANOVA I.</label>
+    <br />
+  	<input type="radio">
+  	<label >ORGANIZACIJA INFORMACIJA I.</label>
+    <br />
+  	<input type="radio">
+  	<label >SOCIOLOGIJA KNJIGE I ČITANJA I.</label>
+    <hr />
+    <p class="t">ISPITNI ROK:</p>
+    <select>
+    <optgroup label="ZIMSKI ROK">
+    <option value="1">Studeni</option>
+    <option value="2">Prosinac</option>
+    <option value="3">Siječanj</option>
+    </optgroup>
+    <optgroup label="LJETNI ROK">
+    <option value="4">Lipanj</option>
+    <option value="5">Svibanj</option>
+    <option value="6">Rujan</option>
+    </select>
+    <hr />
+    <p>VRSTA ROKA</p>
+    <input name="rok[]" id="redovni" type="checkbox"  />
+    <label for="redovni">redovni rok</label> <br />
+    <input name="rok[]" id="izvanredni" type="checkbox"  />
+    <label for="izvanredni">izvanredni rok</label>
+
+
+  </fieldset>
+  </form>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+  <fieldset class="bodovi">
+    <legend><b>BODOVI</b></legend>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" name="b" value="120" min="120" max="200" /> +
+      <input type="number" name="a" value="3" /> =
+      <output name="result">120</output>
+    <hr />
+      <details>
+      <summary>dodatni bodovi</summary>
+      <h5> studenti tijekom kolegija mogu osvojiti dodatne bodove </h5>
+    </details>
+  </form>
+  </fieldset>
+
+
+  <div class="dialog">
+  <dialog open>
+    <p class="t">Odjava ispita je omogućena do 24 sati prije datuma ispitnog roka.</p>
+    <p class="t">Svaki student dužan je pohađati 70% nastave. <meter min="70" max="100"
+      value="70"> 70%</meter><p>
+
+        <progress value="70" max="100">70 %</progress></p>
+
+  </dialog>
+  </div>
+
+
+
+  <div class="navbar">
+    <a href="#home" class="active" target="_top">HOME</a>
+    <a href="http://it.ffos.hr/nastava20172018/sbajic/" target="_blank">CREDIT</a>
+    <a href="https://www.isvu.hr/studomat/prijava" target="_blank">STUDOMAT</a>
+    <a href="http://www.ffos.unios.hr/" target="_blank">FFOS</a>
+  </div>
+
+  <div class="smth"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>LOVECALC</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+	</head>
+	<body>
+
+
+
+		<!--Google Font - Work Sans-->
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+		<div class="container">
+			<div class="profile">
+
+				<button class="profile__avatar" id="toggleProfile">
+
+					<div class="heart"></div>
+
+
+
+				</button>
+				<div class="profile__form">
+					<div class="profile__fields">
+						<div class="field">
+							<input type="text" id="ona" class="input" required pattern=.*\S.* />
+							<label for="ona" class="label">Ona</label>
+						</div>
+						<div class="field">
+							<input type="text" id="on" class="input" required pattern=.*\S.* />
+							<label for="on" class="label">On</label>
+						</div>
+						<div class="profile__footer">
+							<span id="poruka">
+
+							</span>
+							<button class="btn" id="izracunaj">
+								Izračunaj
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul id="rezultati" style="font-family:'Give You Glory', cursive;">
+		</ul>
+
+	<div class="navbar">
+  <a href="about.html">HOW DOES IT WORK?</a>
+	</div>
+
+
+
+		<script src="js/ljubav.js"></script>
+		<script src="js/index.js"></script>
+
+		<audio controls autoplay hidden id="myAudio">
+    <source src="ppllikeus.mp3" type="audio/mpeg">
+
+	<script>
+	var audio = document.getElementById("myAudio");
+	audio.volume = 0.1;
+	</script>
+
+
+
+	</body>
+</html>
